@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_normal">#ffffff</color>
+    <color name="color_selected">#fcbc00</color>
+    <color name="color_button_background">#4e4e4e</color>
+    <color name="color_sub_titlebutton_background">#99ffffff</color>
+    <color name="color_list_line">#707070</color> 
+    <color name="color_bt_background">#4E4E4E</color>    
+    <color name="color_popup_background">#262626</color>    
+    <color name="color_popup_title">#FFF29F</color>
+    <color name="color_bt_trash_background">#2b2b2b</color>
+
+    <color name="color_detail_fragment_background">#33000000</color>
+    <color name="color_system_preference_button_background">#2b2b2b</color>
+
+</resources>

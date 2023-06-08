@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2019 The Android Open Source Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<resources>
+
+    <style name="Preference.Settings.DropDownPreference"
+        parent="@style/Preference.DropDown.Material">
+        <item name="allowDividerAbove">true</item>
+        <item name="allowDividerBelow">true</item>
+    </style>
+
+    <style name="PreferenceFragment.GridSettings">
+        <item name="android:layout">@layout/settings_grid_fragment</item>
+        <item name="android:divider">@drawable/divider</item>
+        <item name="allowDividerAfterLastItem">false</item>
+    </style>
+
+    <style name="Preference.GridSettings" parent="@*android:style/Preference.DeviceDefault">
+        <item name="android:layout">@layout/grid_preference_material</item>
+        <item name="allowDividerAbove">true</item>
+        <item name="allowDividerBelow">true</item>
+    </style>
+
+    <style name="Preference.Settings.HumaxPaneMenuPreference"
+        parent="Preference.Settings">
+        <item name="layout">@layout/hmx_pane_menu_preference</item>
+        <item name="allowDividerAbove">false</item>
+        <item name="allowDividerBelow">false</item>
+    </style>
+
+    <style name="Preference.Settings.HumaxSeekBarPreference"
+        parent="@*android:style/Preference.DeviceDefault.SeekBarPreference">
+        <item name="layout">@layout/hmx_seekbar_preference</item>
+        <item name="allowDividerAbove">false</item>
+        <item name="allowDividerBelow">false</item>
+    </style>
+
+    <style name="PreferenceFragment.HumaxSettingsFragment">
+        <item name="android:layout">@layout/hmx_settings_fragment</item>
+        <item name="android:divider">@drawable/co_list_line</item>
+        <item name="allowDividerAfterLastItem">false</item>
+    </style>
+
+    <style name="Preference.Settings.HumaxPaneSubPreference"
+        parent="Preference.Settings">
+        <item name="layout">@layout/hmx_pane_sub_preference</item>
+    </style>
+
+    <style name="Preference.Settings.HumaxDropDownPreference"
+        parent="@style/Preference.DropDown.Material">
+        <item name="layout">@layout/hmx_dropdown_preference</item>
+        <item name="itemLayout">@layout/hmx_dropdown_spinner_item</item>
+        <item name="iconSpaceReserved">false</item>
+        <item name="allowDividerAbove">true</item>
+        <item name="allowDividerBelow">true</item>
+    </style>
+
+    <style name="Preference.Settings.HumaxSubPreference"
+        parent="Preference.Settings">
+        <item name="layout">@layout/hmx_sub_preference</item>
+        <item name="allowDividerAfterLastItem">false</item>
+    </style>
+
+    <style name="Preference.Settings.HumaxEditPreference"
+        parent="Preference.Settings">
+        <item name="allowDividerAbove">false</item>
+        <!--item name="allowDividerBelow">true</item-->
+    </style>
+
+</resources>

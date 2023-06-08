@@ -1,0 +1,26 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/demo_label"
+    android:key="@string/psk_demo">
+    <Preference
+        android:key="@string/pk_demo_preference_1"
+        android:title="@string/demo_sub2_preference_1_title"
+        settings:controller="com.android.car.settings.common.DefaultRestrictionsPreferenceController">
+        <intent android:targetPackage="com.android.car.settings"
+            android:targetClass="com.android.car.settings.common.CarSettingActivities$DemoSetting1Activity"/>
+    </Preference>
+    <Preference
+        android:key="@string/pk_demo_preference_2"
+        android:title="@string/demo_sub2_preference_2_title"
+        settings:controller="com.humaxdigital.automotive.settings.example.MyCustomRestrictionsPreferenceController">
+        <intent android:targetPackage="com.android.car.settings"
+            android:targetClass="com.android.car.settings.common.CarSettingActivities$DemoSetting2Activity"/>
+    </Preference>
+    <com.android.car.settings.common.MasterSwitchPreference
+        android:icon="@drawable/ic_settings_wifi"
+        android:key="@string/pk_wifi_settings_entry"
+        android:title="@string/wifi_settings"
+        settings:controller="com.humaxdigital.automotive.settings.example.MyCustomEntryPreferenceController"/>
+
+</PreferenceScreen>

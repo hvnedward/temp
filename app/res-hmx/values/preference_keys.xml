@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2018 The Android Open Source Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<!--
+    Identifiers for preferences. Namespaced with "pk" (Preference Key) to avoid conflicts.
+    Key values should be unique.
+-->
+<resources>
+    <!-- demo -->
+    <string name="pk_demo_preference_1" translatable="false">demo_preference_1</string>
+    <string name="pk_demo_preference_2" translatable="false">demo_preference_2</string>
+    <string name="pk_demo_grid_preference" translatable="false">demo_grid_preference"</string>
+    <string name="pk_demo_dialog_controller" translatable="false">demo_dialog_preference"</string>
+    <string name="pk_demo_dual_pane_preference" translatable="false">demo_dual_pane_preference</string>
+    <string name="pk_demo_sub_preference_1" translatable="false">demo_sub_preference_1</string>
+    <string name="pk_demo_sub_preference_2" translatable="false">demo_sub_preference_2</string>
+
+
+    <!-- humax implementation -->
+    <string name="pk_home_pane_menu_settings_entry" translatable="false">home_pane_menu_settings_entry</string>
+    <string name="pk_test_settings_entry" translatable="false">test_settings_entry</string>
+    <string name="pk_edit_home_widget_entry" translatable="false">edit_home_widget_entry</string>
+    <string name="pk_connectivity_settings_entry" translatable="false">connectivity_settings_entry</string>
+
+    <!-- Network settings -->
+    <string name="pk_add_network_connect" translatable="false">add_network_connect</string>
+
+    <!-- Date and time settings -->
+    <string name="pk_datetime_date_format" translatable="false">datetime_date_format</string>
+    <string name="pk_datetime_date_entry" translatable="false">datetime_date_entry</string>
+    <string name="pk_datetime_time_format" translatable="false">datetime_time_format</string>
+    <string name="pk_datetime_time_entry" translatable="false">datetime_time_entry</string>
+
+    <string name="pk_system_system_info_entry" translatable="false">system_system_info_entry</string>
+</resources>

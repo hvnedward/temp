@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2018 The Android Open Source Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/settings_label">
+    <!-- TODO: Re-enable once more suggestion use cases are supported.
+    <com.android.car.settings.common.LogicalPreferenceGroup
+        android:key="@string/pk_suggestions"
+        settings:controller="com.android.car.settings.suggestions.SuggestionsPreferenceController"/>
+    -->
+    <Preference
+        android:icon="@drawable/ic_settings_display"
+        android:key="@string/psk_demo"
+        android:title="@string/demo_label"
+        settings:controller="com.android.car.settings.common.DefaultRestrictionsPreferenceController">
+        <intent android:targetPackage="com.android.car.settings"
+            android:targetClass="com.humaxdigital.automotive.settings.example.DemoSettingActivity"/>
+    </Preference>
+    <Preference
+        android:icon="@drawable/ic_settings_display"
+        android:key="@string/psk_android_settings_entry"
+        android:title="@string/android_settings"
+        settings:controller="com.android.car.settings.common.DefaultRestrictionsPreferenceController">
+        <intent android:targetPackage="com.android.car.settings"
+            android:targetClass="com.humaxdigital.automotive.settings.test.AndroidSubSettingActivity"/>
+    </Preference>
+    <Preference
+        android:icon="@drawable/ic_settings_development"
+        android:key="@string/pk_developer_options_entry"
+        android:title="@string/developer_options_settings"
+        settings:controller="com.android.car.settings.common.DefaultRestrictionsPreferenceController">
+        <intent android:action="android.settings.APPLICATION_DEVELOPMENT_SETTINGS"/>
+    </Preference>
+</PreferenceScreen>

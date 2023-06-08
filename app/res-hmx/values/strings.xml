@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2018 The Android Open Source Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Demo application strings -->
+    <string name="demo_label" translatable="false">Demo Settings</string>
+    <string name="psk_demo" translatable="false">demo_screen</string>
+    <string name="demo_preference_1_title" translatable="false">Demo preference 1</string>
+    <string name="demo_preference_2_title" translatable="false">Demo preference 2</string>
+    <string name="demo_sub_preference_1_title" translatable="false">Demo Sub preference 1</string>
+    <string name="demo_sub_preference_2_title" translatable="false">Demo Sub preference 2</string>
+    <string name="demo_sub2_preference_1_title" translatable="false">Demo Sub2 preference 1</string>
+    <string name="demo_sub2_preference_2_title" translatable="false">Demo Sub2 preference 2</string>
+
+    <string name="psk_demo_grid_preference" translatable="false">demo_grid_preference</string>
+    <string name="demo_grid_preference_title" translatable="false">Demo Grid Preference Settings</string>
+
+    <string name="psk_demo_dialog_controller" translatable="false">demo_dialog_controller</string>
+    <string name="demo_dialog_controller_title" translatable="false">Demo Dialog Controller</string>
+
+    <string name="psk_demo_dual_pane_preference" translatable="false">demo_dual_pane_preference</string>
+    <string name="demo_dual_pane_preference_title" translatable="false">Demo Dual Pane Settings</string>
+
+    <!-- Humax strings -->
+    <string name="home_pane_menu_settings_title" translatable="false">Settings</string>
+    <string name="android_settings" translatable="false">Android Settings</string>
+    <string name="psk_android_settings_entry" translatable="false">android_settings_entry</string>
+
+    <string name="test_settings_title" translatable="false">Test Settings</string>
+    <string name="connectivity_settings_title" translatable="false">Connectivity</string>
+
+    <string name="humax_wifi_settings_summary" translatable="false">Connect a device to vehicle\'s Internet connection</string>
+    <string name="humax_bluetooth_settings_summary" translatable="false">Discoverable as \"Google Android Automotive\"</string>
+		<string name="humax_bluetooth_off_Status" translatable="false">Off</string>
+		<string name="humax_bluetooth_connection_info" translatable="false">Not Connected</string>
+
+    <string name="dialog_save_button_text">Save</string>
+    <string name="dialog_cancel_button_text">Cancel</string>
+
+    <string name="toggle_switch_on">ON</string>
+    <string name="toggle_switch_off">OFF</string>
+
+    <!-- Display -->
+    <string name="edit_home_widget_title" translatable="false">Edit Home Widget</string>
+    <!-- Connectivity -->
+    <string name="network_connection_password" translatable="false">Password</string>
+    <string name="network_connection_password_hint" translatable="false">Please enter your password</string>
+
+    <!-- Date and time settings -->
+    <string name="datetime_date_format" translatable="false">Date Format</string>
+    <string name="dateformat_one" translatable="false">MM/DD/YYYY</string>
+    <string name="dateformat_two" translatable="false">YYYY/MM/DD</string>
+
+    <string name="datetime_date_entry" translatable="false">Date</string>
+    <string name="datetime_time_format" translatable="false">Time Format</string>
+    <string name="datetime_time_entry" translatable="false">Time</string>
+
+    <string name="datetime_time_24hours" translatable="false">24 Hours</string>
+    <string name="datetime_time_12hours" translatable="false">12 Hours</string>
+
+    <string name="datetime_date_year" translatable="false">YYYY</string>
+    <string name="datetime_date_month" translatable="false">MM</string>
+    <string name="datetime_date_day" translatable="false">DD</string>
+
+    <string name="datetime_time_hour" translatable="false">Hour</string>
+    <string name="datetime_time_minute" translatable="false">Minute</string>
+    <string name="datetime_time_ampm" translatable="false">AM/PM</string>
+
+    <!-- System settings -->
+    <string name="system_system_info_entry" translatable="false">System Info / Update</string>
+
+    <string name="system_language_english" translatable="false">English</string>
+
+    <string name="system_temperature_celsius" translatable="false">\u2103</string>
+    <string name="system_temperature_fahrenheit" translatable="false">\u2109</string>
+
+    <string name="system_version_text" translatable="false">SW Version 1.00.41</string>
+    <string name="system_update_help_text" translatable="false">The system will be updated</string>
+    <string name="system_update_button_text" translatable="false">Software Update</string>
+
+    <string name="system_reset_help_text" translatable="false">Resets the user-generated system data and user-specified settings.</string>
+    <string name="system_reset_button_text" translatable="false">Reset</string>
+    <!-- System settings BT -->
+    <string name="system_bt_button_forget_device" translatable="false">Forget Device</string>
+    <string name="system_text_forget_description" translatable="false">Removing this device will also delete its Call history and contacts.</string>    
+
+</resources>

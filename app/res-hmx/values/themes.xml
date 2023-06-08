@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CarGridSettingsTheme" parent="@style/CarSettingTheme">
+        <item name="preferenceTheme">@style/GridPreferenceTheme</item>
+    </style>
+
+    <style name="GridPreferenceTheme" parent="@style/PreferenceTheme">
+        <item name="preferenceFragmentCompatStyle">@style/PreferenceFragment.GridSettings</item>
+        <item name="preferenceStyle">@style/Preference.GridSettings</item>
+    </style>
+
+    <!-- Settings Themes -->
+    <style name="HumaxCarSettingsTheme" parent="@style/CarSettingTheme">
+        <item name="preferenceTheme">@style/HumaxPreferenceTheme</item>
+        <item name="android:textAppearanceLarge">@style/SettingsTitleTextAppearance</item>
+        <item name="android:textAppearanceListItem">@style/SettingsListItemTextAppearance</item>
+        <item name="android:textAppearanceListItemSecondary">@style/SettingsListItemSecondaryTextAppearance</item>
+        <item name="wifi_signal">@drawable/hmx_wifi_signal</item>
+        <item name="wifi_selected_signal">@drawable/hmx_wifi_selected_signal</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:listPreferredItemHeightSmall">120dp</item>
+        <item name="android:listPreferredItemPaddingStart">32dp</item>
+        <!--item name="android:listPreferredItemPaddingEnd">47dp</item-->
+        <item name="android:listPreferredItemPaddingEnd">23dp</item>
+    </style>
+
+    <style name="HumaxPreferenceTheme" parent="@style/PreferenceTheme">
+        <item name="paneMenuPreferenceStyle">@style/Preference.Settings.HumaxPaneMenuPreference</item>
+        <item name="paneSubPreferenceStyle">@style/Preference.Settings.HumaxPaneSubPreference</item>
+        <item name="dropdownPreferenceStyle">@style/Preference.Settings.HumaxDropDownPreference</item>
+        <item name="seekBarPreferenceStyle">@style/Preference.Settings.HumaxSeekBarPreference</item>
+        <item name="preferenceFragmentCompatStyle">@style/PreferenceFragment.HumaxSettingsFragment</item>
+        <item name="subPreferenceStyle">@style/Preference.Settings.HumaxSubPreference</item>
+        <item name="editTextPreferenceStyle">@style/Preference.Settings.HumaxEditPreference</item>
+    </style>
+</resources>
+

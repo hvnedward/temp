@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2018 The Android Open Source Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/wifi_settings">
+    <!-- General Details Category -->
+    <!--com.android.car.settings.common.LogicalPreferenceGroup-->
+        <com.humaxdigital.automotive.settings.wifi.details.WifiDetailsSummaryPreference
+            android:key="@string/pk_wifi_signal_strength"
+            android:selectable="false"
+            android:title="@string/wifi_signal_strength"
+            settings:allowDividerAbove="false"
+            settings:allowDividerBelow="false"
+            settings:controller="com.android.car.settings.wifi.details.WifiSignalStrengthPreferenceController"/>
+        <com.humaxdigital.automotive.settings.wifi.details.WifiDetailsSummaryPreference
+            android:key="@string/pk_wifi_frequency"
+            android:selectable="false"
+            android:title="@string/wifi_frequency"
+            settings:allowDividerAbove="false"
+            settings:allowDividerBelow="false"
+            settings:controller="com.android.car.settings.wifi.details.WifiFrequencyPreferenceController"/>
+        <com.humaxdigital.automotive.settings.wifi.details.WifiDetailsSummaryPreference
+            android:key="@string/pk_wifi_security"
+            android:selectable="false"
+            android:title="@string/wifi_security"
+            settings:allowDividerAbove="false"
+            settings:allowDividerBelow="true"
+            settings:controller="com.android.car.settings.wifi.details.WifiSecurityPreferenceController"/>
+    <!--/com.android.car.settings.common.LogicalPreferenceGroup-->
+
+    <!-- Ip Details Category -->
+    <PreferenceCategory
+        settings:allowDividerAbove="true"
+        settings:layout="@layout/hmx_summary_preference_category"
+        android:title="@string/wifi_network_detail">
+        <com.humaxdigital.automotive.settings.wifi.details.WifiDetailsSummaryPreference
+            android:key="@string/pk_wifi_mac_address"
+            android:selectable="false"
+            android:title="@string/wifi_mac_address"
+            settings:allowDividerAbove="false"
+            settings:allowDividerBelow="false"
+            settings:controller="com.android.car.settings.wifi.details.WifiMacAddressPreferenceController"/>
+        <com.humaxdigital.automotive.settings.wifi.details.WifiDetailsSummaryPreference
+            android:key="@string/pk_wifi_ip"
+            android:selectable="false"
+            android:title="@string/wifi_ip_address"
+            settings:allowDividerAbove="false"
+            settings:allowDividerBelow="false"
+            settings:controller="com.android.car.settings.wifi.details.WifiIpAddressPreferenceController"/>
+        <com.humaxdigital.automotive.settings.wifi.details.WifiDetailsSummaryPreference
+            android:key="@string/pk_wifi_gateway"
+            android:selectable="false"
+            android:title="@string/wifi_gateway"
+            settings:allowDividerAbove="false"
+            settings:allowDividerBelow="false"
+            settings:controller="com.android.car.settings.wifi.details.WifiGatewayPreferenceController"/>
+        <com.humaxdigital.automotive.settings.wifi.details.WifiDetailsSummaryPreference
+            android:key="@string/pk_wifi_subnet_mask"
+            android:selectable="false"
+            android:title="@string/wifi_subnet_mask"
+            settings:allowDividerAbove="false"
+            settings:allowDividerBelow="false"
+            settings:controller="com.android.car.settings.wifi.details.WifiSubnetPreferenceController"/>
+        <com.humaxdigital.automotive.settings.wifi.details.WifiDetailsSummaryPreference
+            android:key="@string/pk_wifi_dns"
+            android:selectable="false"
+            android:title="@string/wifi_dns"
+            settings:allowDividerAbove="false"
+            settings:allowDividerBelow="false"
+            settings:controller="com.android.car.settings.wifi.details.WifiDnsPreferenceController"/>
+        <com.humaxdigital.automotive.settings.wifi.details.WifiDetailsSummaryPreference
+            android:key="@string/pk_wifi_link_speed"
+            android:selectable="false"
+            android:title="@string/wifi_speed"
+            settings:allowDividerAbove="false"
+            settings:allowDividerBelow="true"
+            settings:controller="com.android.car.settings.wifi.details.WifiLinkSpeedPreferenceController"/>
+    </PreferenceCategory>
+
+    <!-- IPv6 Details -->
+    <PreferenceCategory
+        settings:allowDividerAbove="true"
+        settings:layout="@layout/hmx_summary_preference_category"
+        android:selectable="false"
+        android:title="@string/wifi_details_ipv6_address_header">
+        <Preference
+            android:key="@string/pk_wifi_ipv6"
+            android:selectable="false"
+            settings:layout="@layout/hmx_ipv6address_summary_preference"
+            settings:allowDividerAbove="false"
+            settings:allowDividerBelow="false"
+            settings:controller="com.android.car.settings.wifi.details.WifiIpv6AddressPreferenceController"/>
+    </PreferenceCategory>
+</PreferenceScreen>

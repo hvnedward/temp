@@ -1,0 +1,80 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/demo_label"
+    android:key="@string/psk_demo">
+    <Preference
+        android:key="@string/pk_demo_grid_preference"
+        android:title="@string/demo_grid_preference_title"
+        settings:controller="com.android.car.settings.common.DefaultRestrictionsPreferenceController">
+        <intent android:targetPackage="com.android.car.settings"
+            android:targetClass="com.humaxdigital.automotive.settings.example.DemoGridSettingActivity"/>
+    </Preference>
+    <Preference
+        android:key="@string/pk_demo_dual_pane_preference"
+        android:title="@string/demo_dual_pane_preference_title"
+        settings:controller="com.android.car.settings.common.DefaultRestrictionsPreferenceController">
+        <intent android:targetPackage="com.android.car.settings"
+            android:targetClass="com.humaxdigital.automotive.settings.example.DemoDualPaneSettingsActivity"/>
+    </Preference>
+    <Preference
+        android:fragment="com.humaxdigital.automotive.settings.example.DemoSubFragment"
+        android:key="@string/pk_demo_dialog_controller"
+        android:title="@string/demo_dialog_controller_title"
+        settings:controller="com.humaxdigital.automotive.settings.example.MyCustomRestrictionsPreferenceController">
+    </Preference>
+
+    <!--DropDownPreference
+        android:key="@string/pk_datetime_date_format"
+        android:title="@string/datetime_date_format"
+        android:entries="@array/datetime_date_format_array"
+        android:entryValues="@array/datetime_date_format_value"
+        settings:controller="com.android.car.settings.datetime.DatePickerPreferenceController"/-->
+
+    <SwitchPreference
+        android:key="@string/pk_datetime_time_format"
+        android:title="@string/datetime_time_format"
+        settings:controller="com.android.car.settings.datetime.TimeFormatTogglePreferenceController"/>
+
+    <ListPreference
+        android:key="@string/pk_datetime_date_format"
+        android:title="@string/datetime_date_format"
+        android:entries="@array/datetime_date_format_array"
+        android:entryValues="@array/datetime_date_format_value"
+        settings:controller="com.android.car.settings.datetime.DatePickerPreferenceController"/>
+
+    <com.android.car.settings.common.ButtonPreference
+        android:fragment="com.android.car.settings.applications.defaultapps.DefaultAutofillPickerFragment"
+        android:key="@string/pk_autofill_picker_entry"
+        android:summary="@string/app_list_preference_none"
+        android:title="@string/autofill_settings_title"
+        android:widgetLayout="@layout/details_preference_widget"
+        settings:controller="com.android.car.settings.applications.defaultapps.DefaultAutofillPickerEntryPreferenceController"
+        settings:iconSpaceReserved="true"/>
+
+    <com.android.car.settings.common.ProgressBarPreference
+        android:icon="@drawable/ic_media_stream"
+        android:key="@string/pk_storage_music_audio"
+        android:layout="@layout/progress_bar_preference"
+        android:title="@string/storage_music_audio"
+        settings:controller="com.android.car.settings.storage.StorageMediaCategoryPreferenceController"/>
+
+    <com.android.car.settings.common.SeekBarPreference
+        android:key="@string/pk_brightness_level"
+        android:title="@string/brightness"
+        settings:controller="com.android.car.settings.display.BrightnessLevelPreferenceController"
+        settings:showSeekBarValue="false"/>
+
+    <com.android.car.settings.common.ValidatedEditTextPreference
+        android:key="@string/pk_wifi_tether_name"
+        android:title="@string/wifi_hotspot_name_title"
+        settings:controller="com.android.car.settings.wifi.WifiTetherNamePreferenceController"/>
+
+    <com.android.car.settings.common.MasterSwitchPreference
+        android:fragment="com.android.car.settings.wifi.WifiSettingsFragment"
+        android:icon="@drawable/ic_settings_wifi"
+        android:key="@string/pk_wifi_settings_entry"
+        android:title="@string/wifi_settings"
+        settings:controller="com.android.car.settings.wifi.WifiEntryPreferenceController"/>
+
+</PreferenceScreen>

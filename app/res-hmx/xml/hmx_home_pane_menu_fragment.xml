@@ -1,0 +1,36 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/home_pane_menu_settings_title"
+    android:key="@string/pk_home_pane_menu_settings_entry">
+    <com.humaxdigital.automotive.settings.common.PaneMenuPreference
+        android:fragment="com.humaxdigital.automotive.settings.display.DisplaySettingsFragment"
+        android:icon="@drawable/set_ico_display_selector"
+        android:key="@string/pk_display_settings_entry"
+        android:title="@string/display_settings"
+        settings:controller="com.android.car.settings.common.DefaultRestrictionsPreferenceController"/>
+    <com.humaxdigital.automotive.settings.common.PaneMenuPreference
+        android:fragment="com.humaxdigital.automotive.settings.sound.SoundSettingsFragment"
+        android:icon="@drawable/set_ico_sound_selector"
+        android:key="@string/pk_sound_settings_entry"
+        android:title="@string/sound_settings"
+        settings:controller="com.android.car.settings.common.DefaultRestrictionsPreferenceController"/>
+    <com.humaxdigital.automotive.settings.common.PaneMenuPreference
+        android:fragment="com.humaxdigital.automotive.settings.connectivity.ConnectivityFragment"
+        android:icon="@drawable/set_ico_connect_selector"
+        android:key="@string/pk_connectivity_settings_entry"
+        android:title="@string/connectivity_settings_title"
+        settings:controller="com.android.car.settings.common.DefaultRestrictionsPreferenceController"/>
+    <com.humaxdigital.automotive.settings.common.PaneMenuPreference
+        android:fragment="com.humaxdigital.automotive.settings.datetime.DatetimeSettingsFragment"
+        android:icon="@drawable/set_ico_date_selector"
+        android:key="@string/pk_date_time_settings_entry"
+        android:title="@string/date_and_time_settings_title"
+        settings:controller="com.android.car.settings.common.DefaultRestrictionsPreferenceController"/>
+    <com.humaxdigital.automotive.settings.common.PaneMenuPreference
+        android:fragment="com.humaxdigital.automotive.settings.system.SystemSettingsFragment"
+        android:icon="@drawable/set_ico_system_selector"
+        android:key="@string/pk_system_settings_entry"
+        android:title="@string/system_setting_title"
+        settings:controller="com.android.car.settings.common.DefaultRestrictionsPreferenceController"/>
+</PreferenceScreen>
